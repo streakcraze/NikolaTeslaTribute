@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff7f50;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#title {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Tangerine', cursive;
+    font-size: 120px;
+    top: 35%;
+    left: 45%;
+}
+
+#img-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 1000px
+}
+
+#image {
+    opacity: 0.2;
+    max-width: 100%;
+}
+
+#tribute-info {
+    position: absolute;
+    width: 1000px;
+}
+
+#tribute-info blockquote {
+    margin: 25px auto;
+    width: 70%;
+    font-size: 30px;
+}
+
+#tribute-info p {
+    font-size: 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    margin: 25px;
+}
+
+#img-caption {
+    font-size: 20px;
+    text-align: center;
+}
+
+#more-info {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    #TeslaPortrait {
+        width: 250px;
+    }
+    #PlasmaLamp {
+        width: 450px;
+    }
+    #title {
+        font-size: 100px;
+        left: 42%
+    }
+    #img-div {
+        height: 1350px;
+    }
+    #image {
+        width: 700px;
+    }
+    #tribute-info {
+        width: 700px;
+    }
+    #tribute-info blockquote {
+        width: 75%;
+    }
+    #img-caption {
+        text-align: center;
+    }
+  }
+  
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+  
+    #TeslaPortrait {
+        width: 150px;
+        height: 275px;
+    }
+    #PlasmaLamp {
+        width: 250px;
+        height: 275px;
+    }
+    #title {
+        font-size: 60px;
+        left: 45%;
+        top: 35%;
+    }
+    #img-div {
+        height: 2200px;        
+    }
+    #image {
+        width: 400px;
+    }
+    #tribute-info {
+        width: 400px;
+    }
+    #tribute-info blockquote {
+        width: 75%;
+        font-size: 25px;
+    }
+  }
